@@ -1,4 +1,5 @@
 <div class="container-lg">
+<div class="container-lg">
     @can('create-centers')
         <button wire:click="showAddModal" class="btn btn-success align-self-end float-right mb-1">
             add center
