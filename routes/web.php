@@ -19,8 +19,8 @@ use Laravel\Socialite\Facades\Socialite;
 |
 */
 
-Route::get('/', function () {
-    return view('googlelogin');
+Route::middleware('guest:admin')->get('/', function () {
+    return view('admin.login');
 })->name('home');
 Route::get('/success',function (){
    return view('success');
@@ -30,6 +30,8 @@ Route::get('/seed',function (){
 
 });
 
+Route::post('/admin/login',[\App\Http\Controllers\Controller::class,'login'])
+    ->name('admin.login');
 
 Route::get('auth/{provider}', [SocialLoginController::class, 'redirectToProvider'])
     ->name('google.redirect');

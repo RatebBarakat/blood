@@ -19,7 +19,7 @@
     <!-- Custom styles for this template-->
     <link href="{{asset('css/sb-admin-2.min.css')}}" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('css/admin/admin.css')}}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+{{--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">--}}
 
     @livewireStyles
 </head>
@@ -589,7 +589,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script defer src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
     <script defer src="{{asset('js/bootstrap.bundle.js')}}"></script>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     @livewireScripts
     @stack('js')
