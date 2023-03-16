@@ -36,6 +36,8 @@ Route::get('/seed',function (){
 
 });
 
+Route::post('/admin/login',[\App\Http\Controllers\Controller::class,'login'])
+    ->name('admin.login');
 
 Route::get('auth/{provider}', [SocialLoginController::class, 'redirectToProvider'])
     ->name('google.redirect');
