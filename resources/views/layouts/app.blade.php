@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
 </head>
 <body>
-    @yield('content')
+@yield('content')
+
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script defer src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
