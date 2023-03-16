@@ -18,7 +18,7 @@ class Controller extends BaseController
     {
         $validatedData = $request->validate([
             'email' => 'required|email',
-            'password' => ['required',Password::min(8)],
+            'password' => ['required',Password::min(8)->mixedCase()],
         ]);
 
         $credentials = $request->only('email', 'password');
